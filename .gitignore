@@ -1,0 +1,3 @@
+dist/
+node_modules/
+src/server/lib/config.json
