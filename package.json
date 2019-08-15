@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "prebuild": "rimraf dist/ && mkdirp dist/client/",
-    "build": "npm run build:config && npm run build:client && npm run copy-config && npm run build:server",
+    "build": "npm run build:config && npm run build:client && npm run build:copy-config && npm run build:server",
     "build:config": "scripts/dump-netlify-env.js",
     "build:client": "ncp src/client/ dist/client/",
     "build:copy-config": "ncp ./.lighthouse-ci.json dist/client/lighthouse-ci.json",
