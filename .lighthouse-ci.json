@@ -1,0 +1,11 @@
+{
+    "addComment": true,
+    "runner": "chrome",
+    "thresholds": {
+        "perf": 0,
+        "pwa": 0,
+        "seo": 0,
+        "a11y": 0,
+        "bp": 0
+    }
+}

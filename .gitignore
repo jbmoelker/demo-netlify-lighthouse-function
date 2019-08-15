@@ -1,3 +1,3 @@
 dist/
 node_modules/
-src/server/lib/config.json
+src/server/lib/netlify-env.json
