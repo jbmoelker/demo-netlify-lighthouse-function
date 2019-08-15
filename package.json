@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rimraf dist/ && mkdirp dist/client/",
     "build": "npm run build:config && npm run build:client && npm run build:server",
-    "build:config": "scripts/save-pr-env.js",
+    "build:config": "scripts/dump-netlify-env.js",
     "build:client": "ncp src/client/ dist/client/",
     "build:server": "netlify-lambda build src/server/functions/",
     "dev:server": "netlify-lambda serve src/server/functions/",

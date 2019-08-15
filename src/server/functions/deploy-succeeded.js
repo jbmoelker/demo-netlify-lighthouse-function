@@ -2,7 +2,7 @@
  * Adapted from https://github.com/GoogleChromeLabs/lighthousebot/blob/master/runlighthouse.js
  */
 import request from 'request-promise-native'
-import config from '../lib/config.json'
+import lighthouseConfig from '../lib/lighthouse-config'
 const RUNNERS = {chrome: 'chrome', wpt: 'wpt'};
 
 const CI_HOST = 'https://lighthouse-ci.appspot.com';
@@ -11,6 +11,7 @@ const API_KEY = process.env.LIGHTHOUSE_API_KEY;
 export const handler = (event, context, callback) => {
     const send = body => callback(null, { statusCode: 200, body: JSON.stringify(body) })
 
+    const config = lighthouseConfig
     let endpoint;
     let body = config;
     switch (config.runner) {
