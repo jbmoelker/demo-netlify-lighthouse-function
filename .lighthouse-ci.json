@@ -1,6 +1,6 @@
 {
     "addComment": true,
-    "runner": "chrome",
+    "runner": "wpt",
     "thresholds": {
         "perf": 0,
         "pwa": 0,
