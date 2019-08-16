@@ -10,6 +10,8 @@ const API_KEY = process.env.LIGHTHOUSE_API_KEY;
 export default ({ config }) => {
     let endpoint;
     let body = config;
+    config.testUrl = config.testUrl.replace('https://', 'https://demo:tryme@') + '/protected'
+
     switch (config.runner) {
         case RUNNERS.wpt:
             endpoint = `${CI_HOST}/run_on_wpt`;

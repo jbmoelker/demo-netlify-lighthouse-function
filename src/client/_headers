@@ -1,0 +1,4 @@
+/protected.html
+  Basic-Auth: demo:tryme
+/protected/
+  Basic-Auth: demo:tryme
